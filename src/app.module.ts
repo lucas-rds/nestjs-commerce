@@ -13,7 +13,21 @@ import { ProductModule } from './product/product.module';
 import { CartModule } from './cart/cart.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), SharedModule, ProductModule, CartModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: 'motty.db.elephantsql.com',
+      port: 5432,
+      username: 'wkvgvjou',
+      password: 'EOoCuO-3G198GlAMtijHhGpacJ79TvxO',
+      database: 'wkvgvjou',
+      synchronize: true,
+      entities: ['dist/**/*.entity.js'],
+    }),
+    SharedModule,
+    ProductModule,
+    CartModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
