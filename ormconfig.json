@@ -1,10 +1,10 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "motty.db.elephantsql.com",
   "port": 5432,
-  "username": "postgres",
-  "password": "adm123",
-  "database": "commerce",
+  "username": "wkvgvjou",
+  "password": "EOoCuO-3G198GlAMtijHhGpacJ79TvxO",
+  "database": "wkvgvjou",
   "synchronize": true,
   "entities": ["dist/**/*.entity.js"]
 }
